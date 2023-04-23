@@ -8,7 +8,9 @@ export default function Home() {
   const [data, setData] = useState();
   const [requestId, setRequestId] = useState();
   const handleClick = async (requestId) => {
-    const { data } = await axios.get(`http://localhost:8080/api/${requestId}`);
+    const { data } = await axios.get(
+      `https://task-backend-1he5.onrender.com/api/${requestId}`
+    );
     setData(data);
     setRequestId(requestId);
   };
