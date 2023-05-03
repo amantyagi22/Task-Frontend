@@ -9,7 +9,7 @@ const columns = [
   },
   {
     title: "Last Name",
-    dataIndex: "first_name",
+    dataIndex: "last_name",
     key: "last_name",
   },
   {
